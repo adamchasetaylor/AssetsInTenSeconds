@@ -49,8 +49,6 @@ EOF
 # Dependencies from Maven
 ./dependencies.py add -a twilio
 ./dependencies.py add -a unirest-java -g com.konghq -v 3.12.0
-./dependencies.py add -a junit -v 4.13.2
-./dependencies.py add -a json -g org.json
 
 # Prettify this
 cat pom.xml | xmllint --format - > output.xml
